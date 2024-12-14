@@ -1,9 +1,13 @@
 import "./App.css";
 import Users from "../src/users/pages/Users";
+import MainNavigation from "./shared/Navigation/MainNavigation";
 function App() {
   return (
     <>
-      <Users />
+      <main>
+        <MainNavigation />
+        <Users />
+      </main>
     </>
   );
 }
