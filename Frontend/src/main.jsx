@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import NewPlace from "./places/pages/NewPlace.jsx";
+import UserPlaces from "./places/pages/UserPlaces.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/places/new",
     element: <NewPlace />,
+  },
+  {
+    path: "/:userId/places",
+    element: <UserPlaces />,
   },
 ]);
 createRoot(document.getElementById("root")).render(
